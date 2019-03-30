@@ -20,17 +20,31 @@
   <body>
 
     <div class="uk-container">
-      <nav class="uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar>
+      <!-- モバイル用 -->
+      <nav class="uk-navbar-container uk-navbar-transparent uk-hidden@m" uk-navbar>
 
         <div class="uk-navbar-center">
           <a class="uk-navbar-item" href="/yusuke-kaji-official-site/index"><img data-src="/yusuke-kaji-official-site/assets/images/logo.jpg" uk-img></a>
         </div>
 
-      </nav>
-      <hr>
-      <nav class="uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar>
+        <div class="uk-navbar-right uk-hidden@m">
+          <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
+        </div>
 
-        <!-- mサイズ以上で表示-->
+
+      </nav>
+
+      <hr class="uk-margin-remove uk-hidden@m">
+
+      <!-- PC用 -->
+      <nav class="uk-navbar-container uk-navbar-transparent uk-margin-margin uk-visible@m" uk-navbar>
+        <div class="uk-navbar-center">
+          <a class="uk-navbar-item" href="/yusuke-kaji-official-site/index"><img data-src="/yusuke-kaji-official-site/assets/images/logo.jpg" uk-img></a>
+        </div>
+      </nav>
+      <hr class="uk-margin-remove">
+      <nav class="uk-navbar-container uk-navbar-transparent uk-margin-remove uk-visible@m" uk-navbar>
+
         <div class="uk-navbar-center">
           <ul class="uk-navbar-nav uk-visible@m">
             <li><a href="/yusuke-kaji-official-site/index">Top</a></li>
@@ -41,23 +55,17 @@
           </ul>
         </div>
 
-        <!-- mサイズ以下で表示-->
-        <div class="uk-navbar-center">
-          <ul class="uk-navbar-nav uk-hidden@m">
-            <li><span class="uk-navbar-toggle" uk-icon="menu" uk-toggle="target: #offcanvas-nav"></span></li>
-          </ul>
-        </div>
-
       </nav>
-      <hr>
 
-      <div class="uk-section uk-flex-center uk-flex">
-  <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-2@s" uk-scrollspy="target: > div > img; cls: uk-animation-fade; delay: 500">
+      <hr class="uk-visible@m uk-margin-remove">
+
+      <div class="uk-section uk-flex-center uk-flex uk-padding">
+  <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-2@s" uk-scrollspy="target: > div > div > a; cls: uk-animation-fade; delay: 500">
     
     
     <div class="uk-card uk-margin-large-bottom uk-flex uk-flex-center">
       <div class="uk-box-shadow-hover-xlarge">
-        <img id="thumbnail-img" data-src="/yusuke-kaji-official-site/assets/images/work1.jpg" href="#modal-media-image-18-12-31" width="320" uk-toggle uk-img>
+        <a><img id="thumbnail-img" data-src="/yusuke-kaji-official-site/assets/images/work1.jpg" href="#modal-media-image-18-12-31" width="320" uk-toggle uk-img></a>
       </div>
     </div>
     <div id="modal-media-image-18-12-31" class="uk-flex-top" uk-modal>
@@ -80,7 +88,7 @@
     
     <div class="uk-card uk-margin-large-bottom uk-flex uk-flex-center">
       <div class="uk-box-shadow-hover-xlarge">
-        <img id="thumbnail-img" data-src="/yusuke-kaji-official-site/assets/images/work3.jpg" href="#modal-media-image-18-06-01" width="320" uk-toggle uk-img>
+        <a><img id="thumbnail-img" data-src="/yusuke-kaji-official-site/assets/images/work3.jpg" href="#modal-media-image-18-06-01" width="320" uk-toggle uk-img></a>
       </div>
     </div>
     <div id="modal-media-image-18-06-01" class="uk-flex-top" uk-modal>
@@ -103,7 +111,7 @@
     
     <div class="uk-card uk-margin-large-bottom uk-flex uk-flex-center">
       <div class="uk-box-shadow-hover-xlarge">
-        <img id="thumbnail-img" data-src="/yusuke-kaji-official-site/assets/images/work2.jpg" href="#modal-media-image-17-04-01" width="320" uk-toggle uk-img>
+        <a><img id="thumbnail-img" data-src="/yusuke-kaji-official-site/assets/images/work2.jpg" href="#modal-media-image-17-04-01" width="320" uk-toggle uk-img></a>
       </div>
     </div>
     <div id="modal-media-image-17-04-01" class="uk-flex-top" uk-modal>
@@ -137,26 +145,27 @@
         <div class="uk-container" style="text-align:center">
         <hr>
           <a class="uk-icon-button uk-icon" href="https://www.facebook.com/yusuke.k116" target="_blank" uk-icon="icon: facebook"></a>
-          <p>©︎ 2019 Yusuke Kaji All rights reserved.</p>
-        </div>
-      </div>
-
-      <!--モバイル用のメニュー-->
-      <div id="offcanvas-nav" uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar">
-
-          <button class="uk-offcanvas-close uk-light" type="button" uk-close></button>
-          <ul class="uk-nav uk-nav-default">
-            <li><a href="/yusuke-kaji-official-site/index">Top</a></li>
-            <li><a href="/yusuke-kaji-official-site/work">Work</a></li>
-            <li><a href="/yusuke-kaji-official-site/profile">Profile</a></li>
-            <li><a href="/yusuke-kaji-official-site/info">Info</a></li>
-            <li><a href="/yusuke-kaji-official-site/contact">Contact</a></li>
-          </ul>
-
+          <p>©︎ 2019 Yusuke Kaji</p>
         </div>
       </div>
 
     </div>
+    
+    <!--モバイル用のメニュー-->
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+      <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close uk-light" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+          <li><a href="/yusuke-kaji-official-site/index">Top</a></li>
+          <li><a href="/yusuke-kaji-official-site/work">Work</a></li>
+          <li><a href="/yusuke-kaji-official-site/profile">Profile</a></li>
+          <li><a href="/yusuke-kaji-official-site/info">Info</a></li>
+          <li><a href="/yusuke-kaji-official-site/contact">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+
   </body>
 </html>

@@ -20,17 +20,31 @@
   <body>
 
     <div class="uk-container">
-      <nav class="uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar>
+      <!-- モバイル用 -->
+      <nav class="uk-navbar-container uk-navbar-transparent uk-hidden@m" uk-navbar>
 
         <div class="uk-navbar-center">
           <a class="uk-navbar-item" href="/yusuke-kaji-official-site/index"><img data-src="/yusuke-kaji-official-site/assets/images/logo.jpg" uk-img></a>
         </div>
 
-      </nav>
-      <hr>
-      <nav class="uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar>
+        <div class="uk-navbar-right uk-hidden@m">
+          <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
+        </div>
 
-        <!-- mサイズ以上で表示-->
+
+      </nav>
+
+      <hr class="uk-margin-remove uk-hidden@m">
+
+      <!-- PC用 -->
+      <nav class="uk-navbar-container uk-navbar-transparent uk-margin-margin uk-visible@m" uk-navbar>
+        <div class="uk-navbar-center">
+          <a class="uk-navbar-item" href="/yusuke-kaji-official-site/index"><img data-src="/yusuke-kaji-official-site/assets/images/logo.jpg" uk-img></a>
+        </div>
+      </nav>
+      <hr class="uk-margin-remove">
+      <nav class="uk-navbar-container uk-navbar-transparent uk-margin-remove uk-visible@m" uk-navbar>
+
         <div class="uk-navbar-center">
           <ul class="uk-navbar-nav uk-visible@m">
             <li><a href="/yusuke-kaji-official-site/index">Top</a></li>
@@ -41,15 +55,9 @@
           </ul>
         </div>
 
-        <!-- mサイズ以下で表示-->
-        <div class="uk-navbar-center">
-          <ul class="uk-navbar-nav uk-hidden@m">
-            <li><span class="uk-navbar-toggle" uk-icon="menu" uk-toggle="target: #offcanvas-nav"></span></li>
-          </ul>
-        </div>
-
       </nav>
-      <hr>
+
+      <hr class="uk-visible@m uk-margin-remove">
 
       <style type="text/css" media="screen">
   .container {
@@ -77,26 +85,27 @@
         <div class="uk-container" style="text-align:center">
         <hr>
           <a class="uk-icon-button uk-icon" href="https://www.facebook.com/yusuke.k116" target="_blank" uk-icon="icon: facebook"></a>
-          <p>©︎ 2019 Yusuke Kaji All rights reserved.</p>
-        </div>
-      </div>
-
-      <!--モバイル用のメニュー-->
-      <div id="offcanvas-nav" uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar">
-
-          <button class="uk-offcanvas-close uk-light" type="button" uk-close></button>
-          <ul class="uk-nav uk-nav-default">
-            <li><a href="/yusuke-kaji-official-site/index">Top</a></li>
-            <li><a href="/yusuke-kaji-official-site/work">Work</a></li>
-            <li><a href="/yusuke-kaji-official-site/profile">Profile</a></li>
-            <li><a href="/yusuke-kaji-official-site/info">Info</a></li>
-            <li><a href="/yusuke-kaji-official-site/contact">Contact</a></li>
-          </ul>
-
+          <p>©︎ 2019 Yusuke Kaji</p>
         </div>
       </div>
 
     </div>
+    
+    <!--モバイル用のメニュー-->
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+      <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close uk-light" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+          <li><a href="/yusuke-kaji-official-site/index">Top</a></li>
+          <li><a href="/yusuke-kaji-official-site/work">Work</a></li>
+          <li><a href="/yusuke-kaji-official-site/profile">Profile</a></li>
+          <li><a href="/yusuke-kaji-official-site/info">Info</a></li>
+          <li><a href="/yusuke-kaji-official-site/contact">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+
   </body>
 </html>
