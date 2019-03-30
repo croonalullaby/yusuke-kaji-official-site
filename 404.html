@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="梶 雄介HP">
+    <!-- UIKit -->
+    <link rel="stylesheet" href="/assets/css/uikit.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/mycss.css">
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- UIkit -->
+    <script src="/assets/js/uikit.min.js"></script>
+    <script src="/assets/js/uikit-icons.min.js"></script>
+
+    <title>Yusuke Kaji</title>
+  </head>
+  <body>
+
+    <div class="uk-container">
+      <nav class="uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar>
+
+        <div class="uk-navbar-center">
+          <a class="uk-navbar-item" href="/index"><img data-src="/assets/images/logo.jpg" uk-img></a>
+        </div>
+
+      </nav>
+      <hr>
+      <nav class="uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar>
+
+        <!-- mサイズ以上で表示-->
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav uk-visible@m">
+            <li><a href="/index">Top</a></li>
+            <li><a href="/work">Work</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/info">Info</a></li>
+            <li><a href="/Contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- mサイズ以下で表示-->
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav uk-hidden@m">
+            <li><span class="uk-navbar-toggle" uk-icon="menu" uk-toggle="target: #offcanvas-nav"></span></li>
+          </ul>
+        </div>
+
+      </nav>
+      <hr>
+
+      <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+
+
+      <div class="uk-section uk-section-xsmall" id="footer">
+        <div class="uk-container" style="text-align:center">
+        <hr>
+          <a class="uk-icon-button uk-icon" href="https://www.facebook.com/yusuke.k116" target="_blank" uk-icon="icon: facebook"></a>
+          <p>©︎ 2019 Yusuke Kaji All rights reserved.</p>
+        </div>
+      </div>
+
+      <!--モバイル用のメニュー-->
+      <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+
+          <button class="uk-offcanvas-close uk-light" type="button" uk-close></button>
+          <ul class="uk-nav uk-nav-default">
+            <li><a href="/index">Top</a></li>
+            <li><a href="/work">Work</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/info">Info</a></li>
+            <li><a href="/Contact">Contact</a></li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
