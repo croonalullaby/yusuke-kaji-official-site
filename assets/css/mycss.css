@@ -1,2 +1,4 @@
 #slide-img { width: auto; height: auto; }
 #thumbnail-img { height: 100%; }
+#modal-footer { background: rgba(0,0,0,.6); }
+#modal-footer > p { color: #FFF }
